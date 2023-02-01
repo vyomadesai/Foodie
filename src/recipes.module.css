@@ -1,0 +1,118 @@
+body {
+    font-family: Oxygen, sans-serif;
+  }
+  
+  .wrapper {
+    max-height: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 20px rgb(71, 71, 71); */
+    margin: 20px;     
+  }
+ 
+
+  .image {
+    max-width: 100%;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+   }
+
+.titleStyle{
+    color: rgb(237, 92, 92);
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+.modalTitle {
+    color: rgb(227, 57, 57);
+    font-style: italic;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: 0 2px 7px #CCCCCC;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    max-width: 100%;
+}  
+
+.card_btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid lightcoral;
+    background: transparent;
+    color : rgb(237, 92, 92);
+    border-radius: 0.2rem;
+    align-items: center;
+    border-radius: 1rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card:hover .card_btn {
+    background: rgb(239, 65, 65);
+    color: white;
+  }
+
+  .ingStyle{
+    width: 100%;
+    padding: 0 1rem;
+    background-image: linear-gradient(to right, #CCCCCC 0%, #CCCCCC 0%, #CCCCCC 21%, #CCCCCC 52%, #CCCCCC 78%, #CCCCCC 100%);
+}
+
+.ingText {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    text-align: center;
+    text-underline-position: below;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration-line: underline;
+    color: white;
+    text-transform: uppercase;
+}
+
+.ingItems {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.modalImage {
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(10px);
+    background-size: cover;
+}
+
+.modalCentered {
+    position: absolute;
+    top: 5%;
+    max-height: 55vh;
+    max-width: 100vh;
+    overflow-y: auto;
+  }
+
